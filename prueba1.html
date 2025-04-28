@@ -140,7 +140,7 @@
         cantidades.forEach(function(value, id) {
             result[id] = {
                 cantidad: cantidades[id],
-                descripcion: descripciones[id]  + lote[id], // Descomenta si deseas concatenar la descripción con el detalle
+                descripcion: descripciones[id]  +" - "+ "Lt:" +" "+ lote[id], // Descomenta si deseas concatenar la descripción con el detalle
                 precio_unit: parseFloat(p_units[id]).toLocaleString('es-ES', { minimumFractionDigits: 0 }),
             };
         });
